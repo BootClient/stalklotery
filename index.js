@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const token = process.env.token;
 
 var prefix = ('*')
 
@@ -9,7 +8,7 @@ bot.on('ready', function() {
     console.log('Connected');
 });
 
-bot.login(token);
+bot.login("NTIyNDEwNDgzNzAyMzAwNjcy.DvKkxg.XrhzKVOe_VjAYitBwBVV0btiTpo");
 
 bot.on('message', message => {
     if (message.content === prefix + "lotery"){
