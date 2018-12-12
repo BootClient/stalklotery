@@ -23,18 +23,18 @@ bot.on('message', message => {
     }
 
     if (message.content === prefix + "help"){
-        message.channel.sendMessage("Liste des commandes :\n *help \n *lotery");
+        message.channel.sendMessage("Liste des commandes :\n *help \n *lotery \n *stalkloteryinfo");
         console.log("Commande (*help) effectuée.");
     }
 
     if (message.content === prefix + "stalkloteryinfo"){
         var embed = new Discord.RichEmbed()
         .setTitle("Information du Bot :")
-        .setDescription("Ce bot à été créer à usage unique sur ce discord.")
+        .setDescription("Ce bot à été créé à usage unique sur ce discord.")
         .addField("Créé par", "WaynStalker™")
-        .addField("Commandes", "_Commandes privé._")
+        .addField("Commandes", "_Commandes privéés._")
         .addField("Certifications du bot", "Ce bot à été créer, et validé par WaynStalker™ ✅.")
-        .addField("Crée le", "12 décembre 2018.")
+        .addField("Créé le", "12 décembre 2018.")
         .setColor("#FF0000")
         .setFooter("Bot certifié de GIVE NO RAID ✅.")
     message.channel.send(embed)
