@@ -14,7 +14,7 @@ bot.on('message', message => {
     if (message.content === prefix + "lotery"){
         var embed = new Discord.RichEmbed()
         .setTitle("**Le gagnant de la lotery est :**")
-        .setDescription(`${message.guild.members.random()}`)
+        .setDescription("Le membre :" + `${message.guild.members.random()}`)
         .addField("Bien joué  toi !")
         .setColor("#00FF00")
         .setFooter("Bot certifié de GIVE NO RAID ✅.")
@@ -29,8 +29,8 @@ bot.on('message', message => {
 
     if (message.content === prefix + "stalkloteryinfo"){
         var embed = new Discord.RichEmbed()
-        .addField("Information du Bot :")
-        .addField("Ce bot à été créé à usage unique sur ce discord.")
+        .setTitle("Information du Bot :")
+        .setDescription("Ce bot à été créé à usage unique sur ce discord.")
         .addField("Créé par", "WaynStalker™")
         .addField("Commandes", "_Commandes privéés._")
         .addField("Certifications du bot", "Ce bot à été créer, et validé par WaynStalker™ ✅.")
