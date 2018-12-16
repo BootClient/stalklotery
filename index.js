@@ -29,8 +29,8 @@ bot.on('message', message => {
 
     if (message.content === prefix + "stalkloteryinfo"){
         var embed = new Discord.RichEmbed()
-        .setTitle("Information du Bot :")
-        .setDescription("Ce bot à été créé à usage unique sur ce discord.")
+        .addField("Information du Bot :")
+        .addField("Ce bot à été créé à usage unique sur ce discord.")
         .addField("Créé par", "WaynStalker™")
         .addField("Commandes", "_Commandes privéés._")
         .addField("Certifications du bot", "Ce bot à été créer, et validé par WaynStalker™ ✅.")
