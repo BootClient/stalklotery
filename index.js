@@ -12,13 +12,13 @@ bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
     if (message.content === prefix + "lotery"){
-        var embed = new Discord.RichEmbed()
+        var embedLotery = new Discord.RichEmbed()
         .setTitle("**Le gagnant de la lotery est :**")
         .setDescription("Le membre :" + `${message.guild.members.random()}`)
         .addField("Bien joué  toi !")
         .setColor("#00FF00")
         .setFooter("Bot certifié de GIVE NO RAID ✅.")
-    message.channel.send(embed);
+    message.channel.send(embedLotery);
         console.log("Commande (*lotery) effectuée.");
     }
 
@@ -28,7 +28,7 @@ bot.on('message', message => {
     }
 
     if (message.content === prefix + "stalkloteryinfo"){
-        var embed = new Discord.RichEmbed()
+        var embedInfo = new Discord.RichEmbed()
         .setTitle("Information du Bot :")
         .setDescription("Ce bot à été créé à usage unique sur ce discord.")
         .addField("Créé par", "WaynStalker™")
@@ -37,6 +37,6 @@ bot.on('message', message => {
         .addField("Créé le", "12 décembre 2018.")
         .setColor("#FF0000")
         .setFooter("Bot certifié de GIVE NO RAID ✅.")
-    message.channel.send(embed)
+    message.channel.send(embedInfo)
         console.log("Commande (*stalkloteryinfo) effectuée.");
     }})
