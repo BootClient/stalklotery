@@ -8,7 +8,7 @@ bot.on('ready', function() {
     console.log('Connected');
 });
 
-bot.login("NTIyNDEwNDgzNzAyMzAwNjcy.DvKkxg.XrhzKVOe_VjAYitBwBVV0btiTpo");
+bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
     if (message.content === prefix + "lotery"){
