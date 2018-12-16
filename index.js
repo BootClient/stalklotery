@@ -14,8 +14,7 @@ bot.on('message', message => {
     if (message.content === prefix + "lotery"){
         var embedLotery = new Discord.RichEmbed()
         .setTitle("**Le gagnant de la lotery est :**")
-        .setDescription("Le membre :" + `${message.guild.members.random()}`)
-        .addField("Bien joué  toi !")
+        .setDescription("Le membre :" + " " + `${message.guild.members.random()}`, "Bien joué  toi !")
         .setColor("#00FF00")
         .setFooter("Bot certifié de GIVE NO RAID ✅.")
     message.channel.send(embedLotery);
